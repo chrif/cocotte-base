@@ -1,13 +1,13 @@
 FROM chrif/docker:18.03.0-ce-alpine3.7
 
 RUN apk update
-RUN apk add --no-cache git
 RUN apk add --no-cache curl
+RUN apk add --no-cache git
+RUN apk add --no-cache icu-dev
 RUN apk add --no-cache libmcrypt
 RUN apk add --no-cache libmcrypt-dev
-RUN apk add --no-cache icu-dev
-RUN apk add --no-cache openssh-client
 RUN apk add --no-cache nginx
+RUN apk add --no-cache openssh-client
 RUN apk add --no-cache php7
 RUN apk add --no-cache php7-ctype
 RUN apk add --no-cache php7-dom
@@ -26,6 +26,7 @@ RUN apk add --no-cache php7-xdebug
 RUN apk add --no-cache php7-xml
 RUN apk add --no-cache php7-xmlwriter
 RUN apk add --no-cache php7-zlib
+RUN apk add --no-cache rsync
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN rm -rf \
     ~/.composer/cache \
