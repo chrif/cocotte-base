@@ -1,4 +1,4 @@
-FROM docker:17.12.0-ce
+FROM chrif/docker:18.03.0-ce-alpine3.7
 
 RUN apk update
 RUN apk add --no-cache git
@@ -8,8 +8,6 @@ RUN apk add --no-cache libmcrypt-dev
 RUN apk add --no-cache icu-dev
 RUN apk add --no-cache openssh-client
 RUN apk add --no-cache nginx
-RUN apk add --no-cache py-pip
-RUN pip install docker-compose
 RUN apk add --no-cache php7
 RUN apk add --no-cache php7-ctype
 RUN apk add --no-cache php7-dom
