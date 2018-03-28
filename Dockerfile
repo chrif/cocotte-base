@@ -24,6 +24,7 @@ RUN apk add --no-cache php7-simplexml
 RUN apk add --no-cache php7-tokenizer
 RUN apk add --no-cache php7-xdebug
 RUN apk add --no-cache php7-xml
+RUN apk add --no-cache php7-xmlwriter
 RUN apk add --no-cache php7-zlib
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN rm -rf \
