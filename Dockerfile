@@ -3,6 +3,7 @@ FROM chrif/docker:18.03.0-ce-alpine3.7
 RUN apk update
 RUN apk add --no-cache apache2-utils
 RUN apk add --no-cache curl
+RUN apk add --no-cache gettext
 RUN apk add --no-cache git
 RUN apk add --no-cache icu-dev
 RUN apk add --no-cache libmcrypt
