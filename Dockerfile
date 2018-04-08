@@ -20,6 +20,7 @@ RUN apk add --no-cache php7-json
 RUN apk add --no-cache php7-mbstring
 RUN apk add --no-cache php7-opcache
 RUN apk add --no-cache php7-openssl
+RUN apk add --no-cache php7-pcntl
 RUN apk add --no-cache php7-pdo
 RUN apk add --no-cache php7-phar
 RUN apk add --no-cache php7-simplexml
