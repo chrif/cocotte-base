@@ -1,4 +1,4 @@
-FROM chrif/docker:18.03.0-ce-alpine3.7
+FROM chrif/docker:18.03.1-ce
 
 RUN apk update
 RUN apk add --no-cache apache2-utils
