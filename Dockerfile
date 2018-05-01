@@ -1,4 +1,4 @@
-FROM chrif/docker:18.03.1-ce
+FROM chrif/docker
 
 RUN apk update
 RUN apk add --no-cache apache2-utils
